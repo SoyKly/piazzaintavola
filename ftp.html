@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relazione Samuele Lancia 5AIA</title>
+</head>
+<body>
+
+    <!-- BARRA PRINCIPALE -->
+    <div>
+        <div id="dati" style="padding-right: 20px; padding-left: 15px; padding-top: 15px;" height="50px" width="50px">
+        </div>
+
+        <div id="dati" style="padding-right: 40px"><h1>Relazione</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Samuele Lancia 5AIA</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Docente: Agliani Cristian</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>02/12/2022</h1></div>
+    </div>
+
+    <!--BARRA DEL MENU-->
+        <div id="menu">
+
+            <!--HOME-->
+            <div style="padding-right: 30px; padding-left: 15px; padding-top:15px; float: left;">
+                <a href="index.html"><img src="images/home.png" alt="database" height="65px" width="65px"></a>
+            </div>
+
+
+            <div id="tenda">
+                <!--MENU 1-->
+                <div id="dropdown">
+                    <button id="dropbtn">Modello C/S</button>
+                        <div id="dropdown-content">
+                            <a href="mcs.html">Intoduzione</a>
+                            <a href="mcs_1.html">Comunicazione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">FTP</button>
+                        <div id="dropdown-content">
+                            <a href="ftp.html">Intoduzione</a>
+                            <a href="ftp_1.html">FTP Client e Server</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">Protocolli Mail</button>
+                        <div id="dropdown-content">
+                            <a href="email.html">Intoduzione</a>
+                            <a href="email_1.html">SMTP, POP3, IMAP</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">DNS</button>
+                        <div id="dropdown-content">
+                            <a href="dns.html">Domain Name System</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">TELNET</button>
+                        <div id="dropdown-content">
+                            <a href="telnet.html">Intoduzione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">HTTP</button>
+                        <div id="dropdown-content">
+                            <a href="http.html">Intoduzione</a>
+                            <a href="http_1.html">Messaggi e codici di stato</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">LDAP</button>
+                        <div id="dropdown-content">
+                            <a href="ldap.html">Intoduzione</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="box">
+            <p id="testo3">
+                COSA E' IL PROTOCOLLO FTP
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il protocollo FTP (File Transfer Protocol) viene usato per il transferimento file.
+                    <br>Si basa su TCP, questo protocollo utilizza 2 canali TCP in parallelo: uno per la
+                    connessione di controllo e uno per la connessione dati. <br>
+                    La prima usata per spedire infromazioni di controllo come password o comandi sulla porta 21,
+                    la seconda per il trasferimento del file stesso sulla porta 20. <br>
+                    <br>Per instaurare la connsessione devono essere installati dei software FTP
+                    per l'FTP client e FTP server.
+                </p>
+            </div>
+            <p id="testo3">
+                FTPS
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il protocollo FTP non prevede misure di sicurezza dei dati che potrebbero venire
+                    "sniffati" da malintenzionati. <br>
+                    Per risolvere il problema viene aggiunto un layer di cifratura SSL che prevede maggiori
+                    comandi e codici di risposta.
+                </p>
+            </div>
+        </div>
+</body>

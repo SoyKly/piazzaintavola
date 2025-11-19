@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relazione Samuele Lancia 5AIA</title>
+</head>
+<body>
+
+    <!-- BARRA PRINCIPALE -->
+    <div>
+        <div id="dati" style="padding-right: 20px; padding-left: 15px; padding-top: 15px;" height="50px" width="50px">
+        </div>
+
+        <div id="dati" style="padding-right: 40px"><h1>Relazione</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Samuele Lancia 5AIA</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Docente: Agliani Cristian</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>02/12/2022</h1></div>
+    </div>
+
+    <!--BARRA DEL MENU-->
+        <div id="menu">
+
+            <!--HOME-->
+            <div style="padding-right: 30px; padding-left: 15px; padding-top:15px; float: left;">
+                <a href="index.html"><img src="images/home.png" alt="database" height="65px" width="65px"></a>
+            </div>
+
+
+            <div id="tenda">
+                <!--MENU 1-->
+                <div id="dropdown">
+                    <button id="dropbtn">Modello C/S</button>
+                        <div id="dropdown-content">
+                            <a href="mcs.html">Intoduzione</a>
+                            <a href="mcs_1.html">Comunicazione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">FTP</button>
+                        <div id="dropdown-content">
+                            <a href="ftp.html">Intoduzione</a>
+                            <a href="ftp_1.html">FTP Client e Server</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">Protocolli Mail</button>
+                        <div id="dropdown-content">
+                            <a href="email.html">Intoduzione</a>
+                            <a href="email_1.html">SMTP, POP3, IMAP</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">DNS</button>
+                        <div id="dropdown-content">
+                            <a href="dns.html">Domain Name System</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">TELNET</button>
+                        <div id="dropdown-content">
+                            <a href="telnet.html">Intoduzione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">HTTP</button>
+                        <div id="dropdown-content">
+                            <a href="http.html">Intoduzione</a>
+                            <a href="http_1.html">Messaggi e codici di stato</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">LDAP</button>
+                        <div id="dropdown-content">
+                            <a href="ldap.html">Intoduzione</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="box">
+            <p id="testo3">
+                MESSAGGIO DI RICHIESTA
+            </p>
+            <div id="box2" >
+                <p id="testo">
+                    Il messaggio di richiesta comprende: una riga iniziale, un'intestazione ed il 
+                    corpo.<br>
+                    <br>Nella riga iniziale sono presenti:
+                    <ul>
+                        <li id="testo">
+                            Metodo (get o post)
+                        </li>
+                        <li id="testo">
+                            URL della risorsa
+                        </li>
+                        <li id="testo">
+                            Protocollo e versione (HTTP/1.1)
+                        </li>
+                    </ul>
+                </p>
+                <p id="testo">
+                    L'intestazione è formata da una serie di campi e valori (campo : valore)
+                    ed indicano tutte le informazioni necessarie per identificare e specificare
+                    il tipo di messaggio.
+                    <br>Ad esempio:
+                    <ul>
+                        <li id="testo">
+                            Accept: (formati accettati)
+                        </li>
+                        <li id="testo">
+                            Host: (specifica l'host)
+                        </li>
+                        <li id="testo">
+                            User-agent: (identifica il browser)
+                        </li>
+                        <li id="testo">
+                            ecc..
+                        </li>
+                    </ul>
+                </p>
+                <p id="testo">
+                    Il corpo è il messaggio vero e proprio costituito dai dati
+                    da trasmettere (Query).
+                </p>
+            </div>
+            <p id="testo3">
+                MESSAGGIO DI RISPOSTA
+            </p>
+            <div id="box2" >
+                <p id="testo">
+                    Anche il messaggio di risposta comprende: una riga iniziale, un'intestazione ed il 
+                    corpo. <br>
+                    Il messaggio di risposta viene creato dopo che il Server HTTP analizza la richiesta.
+                    <br><br>La riga iniziale è composta da:
+                    <ul>
+                        <li id="testo">
+                            Protocollo e versione
+                        </li>
+                        <li id="testo">
+                            Status code (codice di stato)
+                        </li>
+                    </ul>
+                </p>
+                <p id="testo">
+                    Anche qua l'intestazione è formata da campi e valori con formato (campo : valore).
+                    <br><br>Il corpo (facoltativo) comprende la risorsa richiesta, per esempio una
+                    pagina HTML.
+                </p>
+            </div>
+            <p id="testo3">
+                CODICI DI STATO
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    I codici di stato sono dei numeri (da 100 a 599) che indicano al Client l'esito
+                    della richiesta. <br>
+                    da 100 a 199 sono informazioni temporanee. <br>
+                    da 200 a 299 inicano il successo di una richiesta <br>
+                    da 300 a 399 richiedono un reindirizzamento <br>
+                    da 400 a 499 sono condizioni di errore causate dal Client <br>
+                    da 500 a 599 sono condizioni di errore verificate sul Server <br>
+                    <br>Alcuni dei codici più importanti sono:
+                    <ul>
+                        <li id="testo">
+                            100:continua la trasmissione inviando il resto.
+                        </li>
+                        <li id="testo">
+                            200: risposta di default di esito positivo.
+                        </li>
+                        <li id="testo">
+                            401: l'utente deve fornire credenziali per l'accesso alla risorsa.
+                        </li>
+                        <li id="testo">
+                            404: indica un errore nella scrittura dell' URL
+                    </ul>
+                </p>
+            </div>
+        </div>
+</body>

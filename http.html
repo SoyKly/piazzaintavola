@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relazione Samuele Lancia 5AIA</title>
+</head>
+<body>
+
+    <!-- BARRA PRINCIPALE -->
+    <div>
+        <div id="dati" style="padding-right: 20px; padding-left: 15px; padding-top: 15px;" height="50px" width="50px">
+        </div>
+
+        <div id="dati" style="padding-right: 40px"><h1>Relazione</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Samuele Lancia 5AIA</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Docente: Agliani Cristian</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>02/12/2022</h1></div>
+    </div>
+
+    <!--BARRA DEL MENU-->
+        <div id="menu">
+
+            <!--HOME-->
+            <div style="padding-right: 30px; padding-left: 15px; padding-top:15px; float: left;">
+                <a href="index.html"><img src="images/home.png" alt="database" height="65px" width="65px"></a>
+            </div>
+
+
+            <div id="tenda">
+                <!--MENU 1-->
+                <div id="dropdown">
+                    <button id="dropbtn">Modello C/S</button>
+                        <div id="dropdown-content">
+                            <a href="mcs.html">Intoduzione</a>
+                            <a href="mcs_1.html">Comunicazione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">FTP</button>
+                        <div id="dropdown-content">
+                            <a href="ftp.html">Intoduzione</a>
+                            <a href="ftp_1.html">FTP Client e Server</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">Protocolli Mail</button>
+                        <div id="dropdown-content">
+                            <a href="email.html">Intoduzione</a>
+                            <a href="email_1.html">SMTP, POP3, IMAP</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">DNS</button>
+                        <div id="dropdown-content">
+                            <a href="dns.html">Domain Name System</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">TELNET</button>
+                        <div id="dropdown-content">
+                            <a href="telnet.html">Intoduzione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">HTTP</button>
+                        <div id="dropdown-content">
+                            <a href="http.html">Intoduzione</a>
+                            <a href="http_1.html">Messaggi e codici di stato</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">LDAP</button>
+                        <div id="dropdown-content">
+                            <a href="ldap.html">Intoduzione</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="box">
+            <p id="testo3">
+                COSA E' IL PROTOCOLLO HTTP
+            </p>
+            <div id="box2" >
+                <p id="testo">
+                    Il protocollo HTTP è usato per trasmettere risorse, queste sono identificate da un URL
+                    che è composto da:
+                    <ul>
+                        <li id="testo">
+                            Protcollo
+                        </li>
+                        <li id="testo">
+                            Host
+                        </li>
+                        <li id="testo">
+                            Porta (nascosta o meno)
+                        </li>
+                        <li id="testo">
+                            Percorso
+                        </li>
+                        <li id="testo">
+                            File
+                        </li>
+                        <li id="testo">
+                            Query e frammenti (eventuali)
+                        </li>
+                    </ul>
+                    <div>
+                        <img src="images/url.png" alt="url" width="800px" height="130px">
+                    </div>
+                </p>
+                <p id="testo">
+                    In questo protocollo gli HTTP Client sono elementi attivi che richiedono risorse
+                    e ne visualizzano il contenuto. <br>
+                    Gli HTTP Server sono elementi passivi che rimangono in ascolto su una porta
+                    (default 80) e forniscono le risorse richieste. <br>
+                    <br>Esistono 3 versioni del protocollo: 0.9, 1.0 e 1.1.
+                </p>
+            </div>
+            <p id="testo3">
+                COME FUNZIONA IL PROTOCOLLO HTTP
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il protocollo per comunicare usa delle sessioni che iniziano stabilendo una connessione
+                    sulla porta, effettuando poi una richiesta che contiene un URL, quindi il Server
+                    restituisce la risorsa richiesta. <br>
+                    <br>La connessione viene instaurata attraverso il 3WHS <br>
+                    <br> Fino alla versione 1.0 il protocollo è senza memoria di stato. <br>
+                    La versione 1.1 permette una connessione PERMANENTE dove si possono effettuare
+                    più richieste durante la stessa sessione poichè la porta rimane aperta. <br>
+                    Infatti la versione 1.1 integra i livelli di sessione e presentazione
+                    (codifiche). <br>
+                    <br>Esempio:
+                    <ul style="list-style-type: number;">
+                        <li id="testo">
+                            Il Client richiede una connessione (il Server è in attesa)
+                        </li>
+                        <li id="testo">
+                            il Client invia la richiesta
+                        </li>
+                        <li id="testo">
+                            il Server riceve la richiesta e invia la risposta
+                        </li>
+                        <li id="testo">
+                            il Server chiude (o no) la connessione
+                        </li>
+                        <li id="testo">
+                            il Client riceve la risposta ed eventualmente invia un altra richiesta
+                        </li>
+                    </ul>
+                </p>
+                <p id="testo">
+                    La versione 1.1 con pipeline (connsessione permanente incanalata)
+                    permette l'invio di un'altra richiesta anche prima dell'arrivo della risposta
+                    della richiesta precedente.
+                </p>
+            </div>
+
+            <p id="testo3">
+                HTTPS
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il protocollo HTTPS  si basa su TLS per implementare la cittografia e sicurezza dei
+                    messaggi.
+                </p>
+            </div>
+        </div>
+</body>

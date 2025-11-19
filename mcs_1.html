@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relazione Samuele Lancia 5AIA</title>
+</head>
+<body>
+
+    <!-- BARRA PRINCIPALE -->
+    <div>
+        <div id="dati" style="padding-right: 20px; padding-left: 15px; padding-top: 15px;" height="50px" width="50px">
+        </div>
+
+        <div id="dati" style="padding-right: 40px"><h1>Relazione</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Samuele Lancia 5AIA</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>Docente: Agliani Cristian</h1></div>
+        <div id="dati" style="padding-right: 40px"><h1>02/12/2022</h1></div>
+    </div>
+
+    <!--BARRA DEL MENU-->
+        <div id="menu">
+
+            <!--HOME-->
+            <div style="padding-right: 30px; padding-left: 15px; padding-top:15px; float: left;">
+                <a href="index.html"><img src="images/home.png" alt="database" height="65px" width="65px"></a>
+            </div>
+
+
+            <div id="tenda">
+                <!--MENU 1-->
+                <div id="dropdown">
+                    <button id="dropbtn">Modello C/S</button>
+                        <div id="dropdown-content">
+                            <a href="mcs.html">Intoduzione</a>
+                            <a href="mcs_1.html">Comunicazione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">FTP</button>
+                        <div id="dropdown-content">
+                            <a href="ftp.html">Intoduzione</a>
+                            <a href="ftp_1.html">FTP Client e Server</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">Protocolli Mail</button>
+                        <div id="dropdown-content">
+                            <a href="email.html">Intoduzione</a>
+                            <a href="email_1.html">SMTP, POP3, IMAP</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">DNS</button>
+                        <div id="dropdown-content">
+                            <a href="dns.html">Domain Name System</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">TELNET</button>
+                        <div id="dropdown-content">
+                            <a href="telnet.html">Intoduzione</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">HTTP</button>
+                        <div id="dropdown-content">
+                            <a href="http.html">Intoduzione</a>
+                            <a href="http_1.html">Messaggi e codici di stato</a>
+                        </div>
+                </div>
+                <div id="dropdown">
+                    <button id="dropbtn">LDAP</button>
+                        <div id="dropdown-content">
+                            <a href="ldap.html">Intoduzione</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="box">
+            <p id="testo3">
+                COME FUNZIONA IL MODELLO CLIENT/SERVER
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il funzionamento del modello Client-Server segue questi punti:
+                    <ul style="list-style-type: number;">
+                        <li id="testo">
+                            Il client manda una richiesta al server
+                        </li>
+                        <li id="testo">
+                            il server (in attesa) riceve la richiesta
+                        </li>
+                        <li id="testo">
+                            il server esegue il servizio richiesto
+                        </li>
+                        <li id="testo">
+                            il server manda la risposta e/o dati
+                        </li>
+                        <li id="testo">
+                            il client riceve la risposta e/o dati
+                        </li>
+                    </ul>
+                </p>
+                <p id="testo">
+                    questi passaggi vengono eseguiti da processi in esecuzione su due calcolatori 
+                    differenti. <br>
+                    <br>Schema esplicativo:
+                    <div>
+                        <img src="images/mcs.png" alt="mcs" width="300px" height="180px">
+                    </div>
+                </p>
+            </div>
+            <p id="testo3">
+                DISTINZIONE TRA SERVER E CLIENT
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Il server è ospitato su un "host" in ascolto tramite un socket su una determinata porta
+                    in attesa che un client richieda la connessione. <br>
+                    Il client invia la richiesta tramita la porta su cui il server è in ascolto. <br>
+                    <br>Su uno stesso host possono essere ospitati diversi server in ascolto su porte
+                    diverse, ad esempio per un servizio HTTP il server rimarrà in attesa sulla porta 80.
+                </p>
+            </div>
+            <p id="testo3">
+                SOCKET
+            </p>
+            <div id="box2">
+                <p id="testo">
+                    Un socket formato dalla coppia: indirizzo IP;numero porta, permette di individuare
+                    il gestore di un servizio. <br>
+                    <br> I socket possono essere:  <br>
+                    <br>Datagram Socket: usa una connessione basata sul protocollo UDP, infatti Il client e il 
+                    server non instaurano una vera a propria connessione, ma il client comunica direttamente 
+                    con il server, quando vuole. <br>
+                    <br> Stream Socket: utilizzano una connessione basata sul protocollo TCP. <br>
+                    Vengono inizializzati i processi client e server. <br>
+                    La connessione richiede una richiesta e una accettazione di connessione (es 3WHS).
+                </p>
+            </div>
+        </div>
+</body>
